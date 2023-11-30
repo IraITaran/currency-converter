@@ -1,0 +1,19 @@
+header {
+  background-color: #adc0ea;
+  padding: 10px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0px 0px 10px 0px;
+}
+
+p {
+  margin: 5px 0;
+  display: inline-block;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-right: 10px;
+}
