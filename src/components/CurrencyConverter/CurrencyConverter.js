@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useCurrency } from "./CurrencyContext";
+import { useCurrency } from "../../context/CurrencyContext";
 import "./CurrencyConverter.css";
 
 export default function CurrencyConverter() {

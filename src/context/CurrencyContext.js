@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
+import CurrencyService from "../services/CurrencyService";
 
 const CurrencyContext = createContext();
 
@@ -9,11 +10,11 @@ const CurrencyProvider = ({ children }) => {
   useEffect(() => {
     const fetchRates = async () => {
       try {
-        const response = await fetch(
-          "http://data.fixer.io/api/latest?access_key=63f5a592b3e94936e9e7844b141eaf13&symbols=USD,UAH"
-        );
-        const data = await response.json();
-        setExchangeRates({ ...data.rates, [baseCurrency]: 1 });
+        const rates = await CurrencyService.getExchangeRates();
+        setExchangeRates({
+          ...rates,
+          [baseCurrency]: 1,
+        });
       } catch (error) {
         console.error("Exchange rates fetch error:", error);
       }

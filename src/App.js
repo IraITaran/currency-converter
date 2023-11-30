@@ -1,7 +1,7 @@
 import "./App.css";
-import Header from "./Header";
-import CurrencyConverter from "./CurrencyConverter";
-import { CurrencyProvider } from "./CurrencyContext";
+import Header from "./components/Header/Header";
+import CurrencyConverter from "./components/CurrencyConverter/CurrencyConverter";
+import { CurrencyProvider } from "./context/CurrencyContext";
 
 function App() {
   return (

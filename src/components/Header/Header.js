@@ -1,5 +1,5 @@
 import React from "react";
-import { useCurrency } from "./CurrencyContext";
+import { useCurrency } from "../../context/CurrencyContext";
 import "./Header.css";
 
 export default function Header() {
