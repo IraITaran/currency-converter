@@ -3,7 +3,7 @@ import React, { createContext, useContext, useState, useEffect } from "react";
 const CurrencyContext = createContext();
 
 const CurrencyProvider = ({ children }) => {
-  const [exchangeRates, setExchangeRates] = useState({});
+  const [exchangeRates, setExchangeRates] = useState({ UAH: 0.0, USD: 0.0 });
   const baseCurrency = "EUR";
 
   useEffect(() => {
